@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/Black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="@dimen/creditCardUI_TextView_width"
+        android:layout_height="@dimen/creditCardUI_TextView_height"
+        android:id="@+id/Text1"
+        android:text="Enter Card Balance ($) "
+        android:gravity="center_vertical"
+        android:textColor="@color/White"
+        android:textSize="@dimen/creditCardUI_TextView_size"
+        />
+
+    <EditText
+        android:layout_width="@dimen/creditCardUI_EditText_width"
+        android:layout_height="@dimen/creditCardUI_EditText_height"
+        android:id="@+id/EditText1"
+        android:layout_toRightOf="@+id/Text1"
+        android:inputType="numberDecimal"
+        android:background="@color/White"
+        />
+
+    <TextView
+        android:layout_width="@dimen/creditCardUI_TextView_width"
+        android:layout_height="@dimen/creditCardUI_TextView_height"
+        android:id="@+id/Text2"
+        android:layout_below="@id/Text1"
+        android:layout_marginTop="@dimen/creditCardUI_TextView_marginTop"
+        android:gravity="center_vertical"
+        android:text="Enter Yearly Interest Rate (%) "
+        android:textColor="@color/White"
+        android:textSize="@dimen/creditCardUI_TextView_size"
+        />
+
+    <EditText
+        android:layout_width="@dimen/creditCardUI_EditText_width"
+        android:layout_height="@dimen/creditCardUI_EditText_height"
+        android:id="@+id/EditText2"
+        android:layout_toRightOf="@+id/Text2"
+        android:layout_below="@+id/EditText1"
+        android:layout_marginTop="30dp"
+        android:inputType="numberDecimal"
+        android:background="@color/White"
+        />
+
+    <TextView
+        android:layout_width="@dimen/creditCardUI_TextView_width"
+        android:layout_height="@dimen/creditCardUI_TextView_height"
+        android:id="@+id/Text3"
+        android:layout_below="@id/Text2"
+        android:layout_marginTop="@dimen/creditCardUI_TextView_marginTop"
+        android:gravity="center_vertical"
+        android:text="Enter Minimum Payment ($)"
+        android:textColor="@color/White"
+        android:textSize="@dimen/creditCardUI_TextView_size"
+        />
+
+    <EditText
+        android:layout_width="@dimen/creditCardUI_EditText_width"
+        android:layout_height="@dimen/creditCardUI_EditText_height"
+        android:id="@+id/EditText3"
+        android:layout_toRightOf="@+id/Text3"
+        android:layout_below="@+id/EditText2"
+        android:layout_marginTop="30dp"
+        android:inputType="numberDecimal"
+        android:background="@color/White"
+        />
+
+    <TextView
+        android:layout_width="@dimen/creditCardUI_TextView_width"
+        android:layout_height="@dimen/creditCardUI_TextView_height"
+        android:id="@+id/Text4"
+        android:layout_below="@id/Text3"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:text="Final card Balance ($)"
+        android:textColor="@color/White"
+        android:textSize="@dimen/creditCardUI_TextView_size"
+        />
+
+    <EditText
+        android:layout_width="@dimen/creditCardUI_EditText_width"
+        android:layout_height="@dimen/creditCardUI_EditText_height"
+        android:id="@+id/EditText4"
+        android:layout_toRightOf="@+id/Text4"
+        android:layout_below="@+id/EditText3"
+        android:layout_marginTop="50dp"
+        android:inputType="numberDecimal"
+        android:background="@color/White"
+        />
+
+    <TextView
+        android:layout_width="@dimen/creditCardUI_TextView_width"
+        android:layout_height="@dimen/creditCardUI_TextView_height"
+        android:id="@+id/Text5"
+        android:layout_below="@id/Text4"
+        android:layout_marginTop="@dimen/creditCardUI_TextView_marginTop"
+        android:gravity="center_vertical"
+        android:text="Months Remaining "
+        android:textColor="@color/White"
+        android:textSize="@dimen/creditCardUI_TextView_size"
+        />
+
+    <EditText
+        android:layout_width="@dimen/creditCardUI_EditText_width"
+        android:layout_height="@dimen/creditCardUI_EditText_height"
+        android:id="@+id/EditText5"
+        android:layout_toRightOf="@+id/Text5"
+        android:layout_below="@+id/EditText4"
+        android:layout_marginTop="30dp"
+        android:inputType="numberDecimal"
+        android:background="@color/White"
+        />
+
+    <TextView
+        android:layout_width="@dimen/creditCardUI_TextView_width"
+        android:layout_height="@dimen/creditCardUI_TextView_height"
+        android:id="@+id/Text6"
+        android:layout_below="@id/Text5"
+        android:layout_marginTop="@dimen/creditCardUI_TextView_marginTop"
+        android:gravity="center_vertical"
+        android:text="Interest paid will be "
+        android:textColor="@color/White"
+        android:textSize="@dimen/creditCardUI_TextView_size"
+        />
+
+    <EditText
+        android:layout_width="@dimen/creditCardUI_EditText_width"
+        android:layout_height="@dimen/creditCardUI_EditText_height"
+        android:id="@+id/EditText6"
+        android:layout_toRightOf="@+id/Text6"
+        android:layout_below="@+id/EditText5"
+        android:layout_marginTop="30dp"
+        android:inputType="numberDecimal"
+        android:background="@color/White"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Button_Submit"
+        android:layout_below="@+id/Text6"
+        android:layout_marginTop="30dp"
+        android:text="COMPUTE"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Button_Clear"
+        android:layout_below="@+id/Button_Submit"
+        android:layout_marginTop="5dp"
+        android:text="CLEAR"
+        />
+
+
+</RelativeLayout>
